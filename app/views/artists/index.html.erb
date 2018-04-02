@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+		<h1>Artists</h1>
+
+
+		<table class="table">
+			<tr>
+				<th>Name</th>
+				<th>Image</th>		
+			</tr>
+			<% @artists.each do |artist| %>
+				<tr>
+					<td><%= link_to artist.image_url, artist %></td>
+					<td><%= artist.name %></td>
+				</tr>
+			<% end %>
+		</table>
+
+	</div>
+  </div>
+</div>
